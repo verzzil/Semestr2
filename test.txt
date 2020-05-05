@@ -1,0 +1,21 @@
+
+
+Graph graph = new Graph();
+        Vertex<String> A1 = new Vertex<>("1");
+        Vertex<String> A2 = new Vertex<>("2");
+        Vertex<String> A3 = new Vertex<>("3");
+        Vertex<String> A4 = new Vertex<>("4");
+        Vertex<String> A5 = new Vertex<>("5");
+        Vertex<String> A6 = new Vertex<>("6");
+        Vertex<String> A7 = new Vertex<>("7");
+        Vertex<String> A8 = new Vertex<>("8");
+        Vertex<String> A9 = new Vertex<>("9");
+
+        A1.addChilds(A2,A6,A7,A3);
+        A2.addChilds(A7);
+        A3.addChilds(A7);
+        A4.addChilds(A1,A5,A8);
+        A5.addChilds(A2,A3,A6);
+        A6.addChilds(A7);
+        A8.addChilds(A2,A3,A6);
+        A9.addChilds(A1,A5,A8,A7);

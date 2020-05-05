@@ -14,7 +14,7 @@ public class Graph {
     public void putVertex(Vertex v) {
         vertices.add(v);
     }
-    public void putVertices(Vertex... v) {
+    public <T> void putVertices(Vertex<T>[] v) {
         vertices.addAll(Arrays.asList(v));
     }
     public <T> void putVertex(T v) {
@@ -30,6 +30,9 @@ public class Graph {
 
     public ArrayList<Vertex> getVertices() {
         return vertices;
+    }
+    public void clear() {
+        vertices = new ArrayList<>();
     }
 
 }
